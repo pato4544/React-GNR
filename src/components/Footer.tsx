@@ -1,12 +1,32 @@
 import React from 'react'
+import { CiInstagram, CiTwitter, CiFacebook} from "react-icons/ci";
+import { PiSpotifyLogoLight } from "react-icons/pi";
+import { PiYoutubeLogo } from "react-icons/pi";
+import { SlSocialYoutube } from "react-icons/sl";
+
+import { PiYoutubeLogoThin } from "react-icons/pi";
 
 const Footer = () => {
   return (
     <div>
-        <footer className="flex w-full bg-white h-16">
+        <footer className="flex flex-row 0w-full bg-black h-32 justify-between items-center ">
+         
+          <img className="ml-16 p-2 size-28" src="/assets/img/logo-guns.png" alt="" />
+          
+          <div className='text-center flex flex-col text-white font-montserrat text-[14px] font-light pl-14'>
+             <p className="hover:text-yellow-600">Copyright 2024 © Guns n Roses</p>
+             <p className="hover:text-yellow-600">Politica de privacidad</p>
+             <p className="hover:text-yellow-600">Condiciones de uso</p>
+          </div>
 
-
-
+          <div  className='flex text-4xl text-yellow-600 items-center gap-5 pr-14'>
+            <CiFacebook className='hover:text-white'/>
+            <CiTwitter className='hover:text-white'/>
+            <SlSocialYoutube className='hover:text-white'/>
+            <CiInstagram className='hover:text-white'/>
+            <PiSpotifyLogoLight className='hover:text-white'/>
+          </div>
+          
 
         </footer>
     </div>
