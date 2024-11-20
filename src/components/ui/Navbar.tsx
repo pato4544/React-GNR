@@ -3,13 +3,13 @@ import React from 'react'
 const Navbar = () => {
     return (
         <div>
-            <nav className="fixed w-full bg-transparent flex justify-between items-center border-b border-b-yellow-600 z-50">
+            <nav className="fixed w-full bg-transparent flex justify-between items-center border-b border-b-yellow-600 z-50 mt-1">
 
                 <div className="ml-8">
                     <button><p className="text-white whitespace-nowrap font-playfairdisplay hover:text-yellow-400  text-[25px] font-medium pb-2">GUNS 'N ROSES</p></button>
                 </div>
 
-                <div className="flex gap-7 text-[16px] text-white font-montserrat mr-[7.3%]">
+                <div className="flex gap-7 text-[16px] text-white font-montserrat mr-[7.3%] ">
                 <button><p className="hover:text-yellow-400">NOTICIAS</p></button>
                 <button><p className="hover:text-yellow-400">TIENDA</p></button>
                 <button><p className="hover:text-yellow-400">GALERIA</p></button>
