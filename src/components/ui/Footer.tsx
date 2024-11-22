@@ -4,7 +4,6 @@ import { PiSpotifyLogoLight } from "react-icons/pi";
 import { PiYoutubeLogo } from "react-icons/pi";
 import { SlSocialYoutube } from "react-icons/sl";
 import { ImYoutube2 } from "react-icons/im";
-
 import { PiYoutubeLogoThin } from "react-icons/pi";
 
 const Footer = () => {

@@ -1,6 +1,8 @@
 import React, { FC } from 'react'
 import { IAlbum } from '../type/IAlbum'
 import { useState } from 'react';
+import { Link } from 'react-router';
+import { PiSpotifyLogoLight } from "react-icons/pi";
 
 
 
@@ -15,10 +17,12 @@ const Album: FC<IAlbum> = ({ nombre, año, coverImagen, linkSpotify }) => {
         <img className="w-full h-full object-cover" src={coverImagen} alt={coverImagen} />
         {showOverlay && (
           <div className='absolute inset-0 text-white font-montserrat text-[14px] flex flex-col justify-center text-center space-y-5 bg-black bg-opacity-75'>
-            <h1>{nombre}</h1>
+            <h1 className='text-[20px]'>{nombre}</h1>
             <h1>{año}</h1>
-            <a className='hover:text-yellow-400' href={linkSpotify}>¡Escuchalo en Spotify!</a>
-
+            <Link className='hover:text-yellow-400 flex justify-center items-center gap-5'  to={linkSpotify}>
+            <h3>¡Escuchalo en Spotify!</h3>
+            <PiSpotifyLogoLight className='text-[30px] text-yellow-400'/>
+            </Link>
           </div>
         )}
       </section>
