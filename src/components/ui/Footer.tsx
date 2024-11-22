@@ -10,7 +10,7 @@ import { PiYoutubeLogoThin } from "react-icons/pi";
 const Footer = () => {
   return (
     <div>
-        <footer className="flex flex-row 0w-full bg-black h-32 justify-between items-center ">
+        <footer className="flex flex-row 0w-full bg-black h-32 justify-between items-center">
          
           <img className="ml-16 p-2 size-28" src="/assets/img/logo-guns.png" alt="" />
           

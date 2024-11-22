@@ -1,6 +1,8 @@
 import React from 'react'
 import Album from '../Album'
 import { IAlbum } from '../../type/IAlbum'
+import ITienda from '../../type/ITienda'
+import Tienda from '../Tienda'
 
 const Landing = () => {
 
@@ -13,77 +15,96 @@ const Landing = () => {
     { nombre: "Chinese Democracy", año: 2008, coverImagen: "/assets/img/chinese.webp", linkSpotify: "https://open.spotify.com/intl-es/album/0suNLpB9xraAv1FcdlITjQ" }
   ]
 
+  const Tiendita: ITienda[] = [
+    { titulo: "GNR Lies Dorado Firmado", precio: "$49999 ARS", productoImagen: "/assets/img/lies-vinilo.png" },
+    { titulo: "Use Your Ilussion I Dorado", precio: "$44999 ARS", productoImagen: "/assets/img/uyi1-vinilo.png" },
+    { titulo: "Use Your Ilussion II Dorado", precio: "$44999 ARS", productoImagen: "/assets/img/uyi2-vinilo.png" },
+    { titulo: "Apettite For Destruction Dorado", precio: "$54999 ARS", productoImagen: "/assets/img/appetite-vinilo.png" }
+  ]
 
   return (
     <>
 
-      <section className='w-full h-[2500px] bg-black flex flex-col gap-y-16'>
-          <>
-              <h1 className='text-white text-center font-bebasneue text-4xl pt-36'>BIOGRAFIA</h1>
-          
-            <div className='flex justify-between items-center pl-[12.5%] pr-[12.5%] gap-12'>
-              <p className='text-white font-montserrat'>
-                Guns N' Roses es una banda estadounidense de hard rock formada en Los Ángeles, California, en 1985. <br/>
-                Fundada por el guitarrista Slash, el cantante Axl Rose y demas miembros, se convirtió en uno de los grupos más influyentes y populares en la historia del rock. <br /><br /> 
-                Su debut con el álbum Appetite for Destruction (1987) marcó un hito en la música mundial, vendiendo más de 30 millones de copias solo en EE. UU. y presentando himnos como "Sweet Child O' Mine" y "Welcome to the Jungle". <br /><br />
-                Este éxito fue solo el comienzo, ya que la banda se consolidó como una de las más exitosas de la historia del rock, con un sonido feroz que mezclaba hard rock con influencias de punk y blues, haciendo eco a una generación entera de fans.</p>
-              <img  className='h-[390px] w-[510px] outline outline-white' src="/assets/img/live9.webp" alt="" />
-            </div>
-          
-            <div className='flex justify-between items-center pl-[12.5%] pr-[12.5%] gap-12'>
-              <img  className='h-[390px] w-[510px] outline outline-white' src="/assets/img/live7.webp" alt="" />
-              <p className='text-white font-montserrat'>
+      <section className='w-full h-[3050px] bg-black flex flex-col gap-y-16'>
+        <>
+          <h1 className='text-white text-center font-bebasneue text-4xl pt-28'>BIOGRAFIA</h1>
+
+          <div className='flex justify-between items-center pl-[12.5%] pr-[12.5%] gap-12'>
+            <p className='text-white font-montserrat'>
+              Guns N' Roses es una banda estadounidense de hard rock formada en Los Ángeles, California, en 1985. <br />
+              Fundada por el guitarrista Slash, el cantante Axl Rose y demas miembros, se convirtió en uno de los grupos más influyentes y populares en la historia del rock. <br /><br />
+              Su debut con el álbum Appetite for Destruction (1987) marcó un hito en la música mundial, vendiendo más de 30 millones de copias solo en EE. UU. y presentando himnos como "Sweet Child O' Mine" y "Welcome to the Jungle". <br /><br />
+              Este éxito fue solo el comienzo, ya que la banda se consolidó como una de las más exitosas de la historia del rock, con un sonido feroz que mezclaba hard rock con influencias de punk y blues, haciendo eco a una generación entera de fans.</p>
+            <img className='h-[390px] w-[510px] outline outline-white' src="/assets/img/live9.webp" alt="" />
+          </div>
+
+          <div className='flex justify-between items-center pl-[12.5%] pr-[12.5%] gap-12'>
+            <img className='h-[390px] w-[510px] outline outline-white' src="/assets/img/live7.webp" alt="" />
+            <p className='text-white font-montserrat'>
               A lo largo de su carrera, Guns N' Roses ha sido nominado y ha ganado varios premios, incluyendo múltiples premios MTV, American Music Awards y nominaciones a los Grammy. <br /><br />
-              Su álbum Use Your Illusion I & II (1991), una de sus obras más ambiciosas, canciones como "November Rain" y "Don't Cry", que se convirtieron en himnos del rock clásico. 
+              Su álbum Use Your Illusion I & II (1991), una de sus obras más ambiciosas, canciones como "November Rain" y "Don't Cry", que se convirtieron en himnos del rock clásico.
               Su éxito continuó con Chinese Democracy (2008), después de años de espera y rumores sobre la disolución de la banda. <br /><br />
-               A pesar de los cambios en la formación a lo largo de los años, Guns N' Roses sigue siendo una banda esencial del rock mundial, llenando estadios y convocando a miles de fans a sus conciertos en todo el mundo con su característico sonido poderoso y su imparable legado.
-              </p>
+              A pesar de los cambios en la formación a lo largo de los años, Guns N' Roses sigue siendo una banda esencial del rock mundial, llenando estadios y convocando a miles de fans a sus conciertos en todo el mundo con su característico sonido poderoso y su imparable legado.
+            </p>
+          </div>
+        </>
+
+
+        <>
+          <div>
+            <h1 className='text-white text-center mt-28 font-bebasneue text-4xl' >DISCOGRAFIA</h1>
+            <div className="grid grid-cols-3">
+              {Albums.map((album: IAlbum) =>
+
+                < Album
+
+                  nombre={album.nombre}
+                  año={album.año}
+                  coverImagen={album.coverImagen}
+                  linkSpotify={album.linkSpotify}
+
+                />
+              )}
+
             </div>
-          </>
+          </div>
+        </>
 
 
-          <>
-            <div>
-                <h1 className='text-white text-center mt-28 font-bebasneue text-4xl' >DISCOGRAFIA</h1>
-            
-              <div className="grid grid-cols-3">
-                {Albums.map((album: IAlbum) =>
 
-                  < Album
+        <>
+          <h1 className='text-white text-center  mt-28 font-bebasneue text-4xl'>TIENDA</h1>
 
-                    nombre={album.nombre}
-                    año={album.año}
-                    coverImagen={album.coverImagen}
-                    linkSpotify={album.linkSpotify}
+          <div className="flex justify-around">
+            {Tiendita.map((tienda: ITienda) =>
 
-                  />
-                )}
+              < Tienda
 
-              </div>
-            </div>
-          </>
+                titulo={tienda.titulo}
+                precio={tienda.precio}
+                productoImagen={tienda.productoImagen}
+              />
+            )}
+
+          </div>
+        </>
 
 
-          <>
-              <h1 className='text-white text-center  mt-28 font-bebasneue text-4xl'>MERCH</h1>
-              <div className='flex justify-around'>
-                <div>
+        <>
+          <div className='mt-24w-full h-72 mt-28 bg-yellow-400 flex flex-col justify-center gap-y-4' > 
+          <h1 className='text-center font-bebasneue text-5xl tracking-widest'>¡SUSCRIBITE AL NEWSLETTER!</h1>
+          <div className='text-center font-roboto flex flex-col'>
+            <p>Tours, noticias y promociones, directo a tue email.</p>
+            <p>Al suscribirte aceptas nuestras <a className='text-white hover:text-black' href="">politicas de privacidad</a> y <a className='text-white hover:text-black' href="">condiciones de uso</a>.</p> 
+          </div>
+          <div className='h-[20%] flex justify-center items-center gap-10'>
+          <input className='w-[30%] h-[60%] placeholder:gray-500' type="email" placeholder='Email*' />
+          <button className='w-32 border-b-4 border-b-white font-montserrat text-white font-semibold hover:text-black hover:border-black' type='submit'>SUSCRIBIRSE</button>
+          </div>
+         </div> 
 
-                </div>
-                  <img src="" alt="" />
-                  <h2></h2>
-                <div>
-                  
-                </div>
-                  <img src="" alt="" />
-                  <h2></h2>
-                <div>
 
-                </div>
-                  <img src="" alt="" />
-                  <h2></h2>
-              </div>
-          </>
+        </>
       </section>
 
 

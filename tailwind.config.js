@@ -11,7 +11,8 @@ export default {
         montserrat: ['Montserrat', 'sans-serif'],
         poppins: ['Poppins', 'sans-serif'],
         bebasneue: ['Bebas Neue', 'sans-serif'],
-        playfairdisplay: ['Playfair Display', 'sans-seriff']
+        playfairdisplay: ['Playfair Display', 'sans-seriff'],
+        lato: ['Lato']
       },
     },
   },

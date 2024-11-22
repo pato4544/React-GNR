@@ -9,6 +9,7 @@ const Album: FC<IAlbum> = ({ nombre, año, coverImagen, linkSpotify }) => {
 
   return (
     <>
+
       <section className='relative w-72 h-72 outline mt-16 outline-yellow-500 outline-1 ml-[20.3%] transition-transform duration-100 ease-in-out hover:scale-105' onMouseEnter={() => setShowOverlay(true)} onMouseLeave={() => setShowOverlay(false)}>
 
         <img className="w-full h-full object-cover" src={coverImagen} alt={coverImagen} />
