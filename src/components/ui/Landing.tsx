@@ -1,9 +1,9 @@
 import React from 'react'
-import Album from '../Album'
+import Album from './Landing/Album'
 import { IAlbum } from '../../type/IAlbum'
 import ITienda from '../../type/ITienda'
-import Tienda from '../Tienda'
-import Contacto from '../Contacto'
+import Tienda from './Landing/Tienda'
+import Contacto from './Landing/Newsletter'
 
 
 const Landing = () => {

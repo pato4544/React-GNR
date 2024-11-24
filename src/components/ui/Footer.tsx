@@ -5,11 +5,12 @@ import { PiYoutubeLogo } from "react-icons/pi";
 import { SlSocialYoutube } from "react-icons/sl";
 import { ImYoutube2 } from "react-icons/im";
 import { PiYoutubeLogoThin } from "react-icons/pi";
+import { Link } from 'react-router';
 
 const Footer = () => {
   return (
     <div>
-        <footer className="flex flex-row 0w-full bg-black h-32 justify-between items-center">
+        <footer className="flex flex-row w-full bg-black h-32 justify-between items-center">
          
           <img className="ml-16 p-2 size-28" src="/assets/img/logo-guns.png" alt="" />
           
@@ -20,11 +21,11 @@ const Footer = () => {
           </div>
 
           <div  className='flex text-3xl text-yellow-600 items-center gap-3 pr-14'>
-            <CiFacebook className='hover:text-white'/>
-            <CiTwitter className='hover:text-white'/>
-            <ImYoutube2 className='hover:text-white text-[40px]'/>
-            <CiInstagram className='hover:text-white'/>
-            <PiSpotifyLogoLight className='hover:text-white'/>
+            <Link to = {"https://www.facebook.com/gunsnroses/?locale=es_ES"}><CiFacebook className='hover:text-white'/></Link>
+            <Link to = {"https://twitter.com/gunsnroses"}><CiTwitter className='hover:text-white'/></Link>
+            <Link to = {"https://www.youtube.com/channel/UCIak6JLVOjqhStxrL1Lcytw"}><ImYoutube2 className='hover:text-white text-[40px]'/></Link>
+            <Link to = {"https://www.instagram.com/gunsnroses/"}><CiInstagram className='hover:text-white'/></Link>
+            <Link to = {"https://open.spotify.com/intl-es/artist/3qm84nBOXUEQ2vnTfUTTFC"}><PiSpotifyLogoLight className='hover:text-white'/></Link>
           </div>
           
 
