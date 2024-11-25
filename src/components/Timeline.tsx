@@ -4,7 +4,7 @@ import ITimeline from '../type/ITimeline'
 
 const Timeline:FC<ITimeline> = ({titulo, imagen, contenido}) => {
     return ( 
-        <div className='flex'>
+        <div>
             <div>
                 <img src={imagen} alt={imagen} />
             </div>
