@@ -7,7 +7,7 @@ const Notice = () => {
 
 
   const listaNoticias: INoticias[] = [
-    {titulo: "¡Únete a Nightrain en 2024 y gana más productos de GN'R!", fecha: "07.22.24", contenido: "", imagenNoticia: "/assets/img/new1.webp"},
+    {titulo: "¡Únete a Nightrain en 2024 y gana más productos de GN'R!", fecha: "07.22.24", contenido:"With the release of the band's latest song, The General, we have crafted limited-edition music boxes featuring the hard-hitting new single.", imagenNoticia: "/assets/img/new1.webp"},
     {titulo: "GUNS N' ROSES en Atlanta, GA para Music Midtow", fecha: "05.16.23", contenido: "", imagenNoticia: "/assets/img/new2.webp"},
     {titulo: "GUNS N' ROSES encabezará el Power Trip en Indio, CA", fecha: "03.30.23", contenido: "", imagenNoticia: "/assets/img/new3.webp"},
     {titulo: "Anuncio CD exclusivo de Nightrain: Guns N' Roses: London 1991", fecha: "03.29.23", contenido: "", imagenNoticia: "/assets/img/new4.webp"},
@@ -23,7 +23,7 @@ const Notice = () => {
     <>  
             
   
-            <div className='bg-fixed min-h-screen pt-20 pb-10 w-full flex flex-col items-center' style={{backgroundImage: ('url(assets/img/n7.png)')}}>
+            <div className='bg-fixed min-h-screen pt-20 pb-10 w-full flex flex-col items-center' style={{backgroundImage: ('url(/assets/img/n7.png)')}}>
               <div className='flex justify-center'>
                   <div className='grid grid-cols-3 gap-12  '>
               {listaNoticias.map((noticia: INoticias) =>

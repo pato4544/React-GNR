@@ -8,6 +8,7 @@ import Tours from '../components/Pages/Tours'
 import Tienda from '../components/Pages/Tienda'
 import Notice from '../components/Pages/Noticias'
 import Timeline from '../components/Pages/Timelines'
+import Noticiaid from '../components/Noticiaid'
 
 const AppRouter = () => {
   return (
@@ -16,9 +17,22 @@ const AppRouter = () => {
 
    <Routes>
 
-    <Route element={<Home/>} path='/home'/>  {/*Lo que esta dentro de route se renderiza de forma "condicional". */}
+    <Route element={<Home/>} path='/'/>  {/*Lo que esta dentro de route se renderiza de forma "condicional". */}
     <Route element={<Timeline/>} path='/timeline'/> 
-    <Route element={<Notice/>} path='/noticias'/> 
+    <Route element={<Notice/>} path='/noticias'/>
+      <Route element={<Noticiaid/>} path='/noticias/1'/>
+
+
+
+
+
+
+
+
+
+
+
+
     <Route element={<Tienda/>} path='/tienda'/>
     <Route element={<Galeria/>} path='/galeria'/> {/* Aca basicamente ponemos la componente galeria y la ruta que va a usar  */}
     <Route element = {<Tours/>} path='/tours'/>    

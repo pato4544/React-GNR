@@ -1,13 +1,22 @@
 import React from 'react'
-import { Link } from 'react-router'
+import { Link, useNavigate } from 'react-router'
 
 const Navbar = () => {
+
+// const navigate = useNavigate();
+
+// const ejemplo = () => {
+//     navigate('/')
+// }
+
+// <button onClick={() => ejemplo()}>Login</button>
+
     return (
         <div>
             <nav className="fixed w-full bg-black/70 flex justify-between items-center border-b border-b-yellow-600 z-50 pt-1">
 
                 <div className="ml-8">
-                    <Link to = {"/home"}> <p className="text-white whitespace-nowrap font-playfairdisplay hover:text-yellow-400  text-[25px] font-medium pb-2">GUNS 'N ROSES</p></Link>
+                    <Link to = {"/"}> <p className="text-white whitespace-nowrap font-playfairdisplay hover:text-yellow-400  text-[25px] font-medium pb-2">GUNS 'N ROSES</p></Link>
                 </div>
 
                 <div className="flex gap-7 text-[16px] text-white font-montserrat mr-[7.3%] ">

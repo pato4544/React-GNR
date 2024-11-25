@@ -5,15 +5,12 @@ import Timeline from '../Timeline'
 const Timelines = () => {
 
   const listaTimeline: ITimeline[] = [
-    {titulo: "", contenido: "", imagen: "/assets/img/"},
-    {titulo: "", contenido: "", imagen: "/assets/img/"},
-    {titulo: "", contenido: "", imagen: "/assets/img/"},
-    {titulo: "", contenido: "", imagen: "/assets/img/"},
-    {titulo: "", contenido: "", imagen: "/assets/img/"},
-    {titulo: "", contenido: "", imagen: "/assets/img/"},
-    {titulo: "", contenido: "", imagen: "/assets/img/"},
-    {titulo: "", contenido: "", imagen: "/assets/img/"},
-    {titulo: "", contenido: "", imagen: "/assets/img/"}
+    {titulo:"", contenido:"", imagen:""},
+    {titulo:"", contenido:"", imagen:""},
+    {titulo:"", contenido:"", imagen:""},
+    {titulo:"", contenido:"", imagen:""},
+    {titulo:"", contenido:"", imagen:""}
+
 ]
   return (
     <div>
