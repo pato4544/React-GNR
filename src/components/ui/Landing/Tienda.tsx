@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import { FC } from 'react'
 import ITienda from '../../../type/ITienda'
 
 const Tienda:FC<ITienda> = ({productoImagen, titulo, precio}) => {

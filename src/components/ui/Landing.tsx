@@ -1,10 +1,8 @@
-import React, { FC } from 'react'
 import Album from './Landing/Album'
 import ITienda from '../../type/ITienda'
 import Tienda from './Landing/Tienda'
 import Contacto from './Landing/Newsletter'
 import { useNavigate } from 'react-router'
-import INoticias from '../../type/INoticias'
 import IAlbum from '../../type/IAlbum'
 
 
