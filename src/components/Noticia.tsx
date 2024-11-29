@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import { FC } from 'react'
 import INoticias from '../type/INoticias'
 import { useNavigate } from 'react-router'
 

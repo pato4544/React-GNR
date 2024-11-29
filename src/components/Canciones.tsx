@@ -1,6 +1,4 @@
-import React from 'react'
 import { Link, useLocation } from 'react-router';
-import INoticias from '../type/INoticias';
 import IAlbum from '../type/IAlbum';
 import { PiSpotifyLogoLight } from 'react-icons/pi';
 import { FaRegClock } from "react-icons/fa6";
@@ -14,12 +12,10 @@ const Canciones = () => {
 
 
   return (
-    // <div className = "w-full bg-cover h-[750px] text-center text-white" style={{backgroundImage: 'url(/assets/img/Guns-N-Roses.webp)'}}>
-    // <div className='w-full h-full bg-gradient-to-b from-transparent to-black'>
-    
+
     <div className='min-h-screen  w-full bg-black flex-col '>
 
-      <div className=' w-full  z-50' style={{backgroundImage: 'url()'}}>
+      <div className='w-full h-[40vh] pt-16 bg-center bg-cover z-50' style={{backgroundImage: 'url(/assets/img/fondo9.webp)'}}>
       <div className='w-full h-full bg-gradient-to-b from-transparent to-black'> </div>
       </div>
       
