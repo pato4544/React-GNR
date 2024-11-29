@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-import { IAlbum } from '../../../type/IAlbum'
+import IAlbum from '../../../type/IAlbum';
 import { useState } from 'react';
 import { Link } from 'react-router';
 import { PiSpotifyLogoLight } from "react-icons/pi";

@@ -5,15 +5,15 @@ import { useNavigate } from 'react-router'
 const Noticia:FC<INoticias> = ({titulo, fecha, imagenNoticia, contenido}) => {
 
 
-const navigate = useNavigate();
+const navigate = useNavigate();  {/* La constante de nombre navigate nos va a dejar usar el hook useNavigate, el cual nos permite navegar a otras rutas programaticamente, sin necesidad de enlaces como <a> o <Link>*/}
 
 const irNoticia = () => {
 
-  const noticia = {titulo, fecha, imagenNoticia, contenido}
-  navigate("/noticias/1", {state: noticia} )
+  const noticia = {titulo, fecha, imagenNoticia, contenido} // Aca le pasamos las props a la constante noticia  
+  navigate("/noticias/1", {state: noticia} )  // Utilizamos el hook con su alias, poniendo ruta y en state le pasamos todos los datos de noticia que definimos arriba
 }
     return ( 
-        <div onClick={() => irNoticia()} className=' flex flex-col w-[324px] h-[577px]  overflow-hidden group'>
+        <div onClick={() => irNoticia()} className=' flex flex-col w-[324px] h-[577px]  overflow-hidden group'> {/* Al hacer click en cualquier de los item noticia vamos a realizar la funcion irNoticia de mas arriba, que basicamente nos lleva a esa ruta*/}
           <div  className = 'h-[65%] transition-transform duration-300 ease-in-out group-hover:scale-105'>
           <img className='w-full h-full' src={imagenNoticia} alt={imagenNoticia} />
           </div>
