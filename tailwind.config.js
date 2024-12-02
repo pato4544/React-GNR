@@ -12,6 +12,8 @@ export default {
         poppins: ['Poppins', 'sans-serif'],
         bebasneue: ['Bebas Neue', 'sans-serif'],
         playfairdisplay: ['Playfair Display', 'sans-seriff'],
+        gaMaamli: ['Ga Maamli', 'sans-serif'],
+        rowdies: ['Rowdies', 'sans-serif'],
         lato: ['Lato']
       },
     },

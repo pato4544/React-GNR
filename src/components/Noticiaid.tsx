@@ -12,7 +12,7 @@ const Noticiaid = () => {
     <div className='w-full flex justify-center bg-fixed' style={{backgroundImage: ('url(/assets/img/n7.png)')}}>
         <div className='min-h-screen flex justify-center pt-20 pb-10'>
             <div className='w-[600px] bg-black/70 flex flex-col '>
-            <div className='h-auto'>
+            <div className='h-auto pl-2'>
                 <h2 className='font-montserrat text-white font-bold text-[20px]'>{noticia.fecha}</h2>
                 <h1 className='font-bebasneue text-[40px] text-white'>{noticia.titulo}</h1>
                 </div>

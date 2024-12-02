@@ -11,6 +11,9 @@ const irNoticia = () => {
 
   const noticia = {titulo, fecha, imagenNoticia, contenido} // Aca le pasamos las props a la constante noticia  
   navigate("/noticias/1", {state: noticia} )  // Utilizamos el hook con su alias, poniendo ruta y en state le pasamos todos los datos de noticia que definimos arriba
+  setTimeout(() => {
+    window.scrollTo(0, 0);
+  }, 65);
 }
     return ( 
         <div onClick={() => irNoticia()} className=' flex flex-col w-[324px] h-[577px]  overflow-hidden group'> {/* Al hacer click en cualquier de los item noticia vamos a realizar la funcion irNoticia de mas arriba, que basicamente nos lleva a esa ruta*/}

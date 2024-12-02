@@ -14,13 +14,17 @@ const Canciones = () => {
   return (
 
     <div className='min-h-screen  w-full bg-black flex-col '>
-
-      <div className='w-full h-[40vh] pt-16 bg-center bg-cover z-50' style={{backgroundImage: 'url(/assets/img/fondo9.webp)'}}>
-      <div className='w-full h-full bg-gradient-to-b from-transparent to-black'> </div>
+      
+      <div className='w-full h-[80vh] bg-cover z-50' style={{backgroundImage: 'url(/assets/joya.webp)', backgroundPosition: '0% 15%' }}>
+      <div className='absolute bottom-44 left-1/2 transform -translate-x-1/2 uppercase z-1'>
+      <h1 className='text-white font-semibold text-[25px] font-rowdies'>{album.nombre}</h1>
+      <p className='text-yellow-400 text-center font-lato  text-[25px]'>{album.año}</p>
+      </div>
+      <div className='w-full h-full bg-gradient-to-b from-transparent to-black'></div>
       </div>
       
 
-      <div className='flex h-[80%] pt-36 pl-24'>
+      <div className='flex h-[80%] pt-28 pl-24 pb-20'>
       <div className=' flex flex-col w-[40%] gap-y-6 pl-4'>
         <img className="h-auto w-[70%]  outline outline-yellow-400" src={album.coverImagen} alt={album.coverImagen} />
 
