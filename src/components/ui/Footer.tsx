@@ -11,9 +11,9 @@ const Footer = () => {
           <img className="ml-16 p-2 size-28" src="/assets/img/logo/logo-guns.png" alt="Logo Guns" />
           
           <div className='text-center flex flex-col text-white font-montserrat text-[14px] font-light pl-24'>
-             <p className="cursor-pointer hover:text-yellow-400">© 2024 Patricio Pérez. Sitio no oficial de Guns N' Roses. </p>
+             <p className="cursor-pointer hover:text-yellow-400">© 2024 Patricio Pérez </p>
+             <p className="cursor-pointer hover:text-yellow-400">Sitio no oficial de Guns N' Roses</p>
              <p className="cursor-pointer hover:text-yellow-400">Politica de privacidad</p>
-             <p className="cursor-pointer hover:text-yellow-400">Condiciones de uso</p>
           </div>
 
           <div  className='flex text-3xl text-yellow-600 items-center gap-3 pr-14'>
