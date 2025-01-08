@@ -2,15 +2,15 @@ import { FC } from 'react'
 import { INoticias } from '../type/INoticias';
 import { useNavigate } from 'react-router'
 
-const Noticia:FC<INoticias> = ({titulo, fecha, imagenNoticia, contenido}) => {
+const Noticia:FC<INoticias> = ({titulo, fecha, imagenNoticia, contenido, id}) => {
 
 
 const navigate = useNavigate();  {/* La constante de nombre navigate nos va a dejar usar el hook useNavigate, el cual nos permite navegar a otras rutas programaticamente, sin necesidad de enlaces como <a> o <Link> 40*/}
 
 const irNoticia = () => {
 
-  const noticia = {titulo, fecha, imagenNoticia, contenido} // Aca le pasamos las props a la constante noticia  
-  navigate("/noticias/1", {state: noticia} )  // Utilizamos el hook con su alias, poniendo ruta y en state le pasamos todos los datos de noticia que definimos arriba
+  const noticia = {titulo, fecha, imagenNoticia, contenido, id} // Aca le pasamos las props a la constante noticia  
+  navigate(`/noticias/${id}`, {state: noticia} )  // Utilizamos el hook con su alias, poniendo ruta y en state le pasamos todos los datos de noticia que definimos arriba
   setTimeout(() => {
     window.scrollTo(0, 0);
   }, 65);
@@ -21,8 +21,8 @@ const irNoticia = () => {
           <img className='w-full h-full' src={imagenNoticia} alt={imagenNoticia} />
           </div>
           <div className='bg-black/75 pl-5 pt-5 h-[35%] group-hover:bg-yellow-400 transition duration-300 ease-in'>
-            <h3 className='font-montserrat text-white font-bold'>{fecha}</h3>
-            <h1 className='font-bebasneue text-[35px] text-white '>{titulo}</h1>
+            <p className='font-montserrat text-white font-bold'>{fecha}</p>
+            <h2 className='font-bebasneue text-[35px] text-white '>{titulo}</h2>
           </div>
         </div> 
     )

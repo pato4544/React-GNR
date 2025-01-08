@@ -2,13 +2,13 @@ import { FC } from 'react'
 import { IRopa } from '../type/IRopa';
 import { useNavigate } from 'react-router';
 
-const Ropita:FC<IRopa> = ({titulo, precio, productoImagen, imagenReversa, descripcion, detalles, listaImagen}) => {
+const Ropita:FC<IRopa> = ({titulo, precio, productoImagen, imagenReversa, descripcion, detalles, listaImagen, tipo, id}) => {
 
 
   const navigate = useNavigate();
   const irProducto = () => {
-    const ropa = {titulo, precio, productoImagen, descripcion, detalles, listaImagen}
-    navigate("/tienda/producto", {state: ropa})
+    const ropa = {id, titulo, precio, productoImagen, descripcion, detalles, listaImagen, tipo}
+    navigate(`/tienda/${tipo}/${id}`, {state: ropa})
     window.scrollTo(65, 0); 
   }
   return (
@@ -23,7 +23,7 @@ const Ropita:FC<IRopa> = ({titulo, precio, productoImagen, imagenReversa, descri
         </div >
         <div className='w-full text-center pb-2'>
         <h2 className='cursor-pointer text-white font-poppins text-[18px] mt-3' >{titulo}</h2>
-        <h3 className='cursor-pointer text-white font-lato'>{precio}</h3>
+        <p className='cursor-pointer text-white font-lato'>{precio}</p>
         </div>
     </div>
     </div>

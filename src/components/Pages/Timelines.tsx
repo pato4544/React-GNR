@@ -25,9 +25,9 @@ const Timelines = () => {
 
       
 
-        <div className='flex flex-col text-white pr-32 pl-32 text-center h-[600px] bg-gradient-to-tr from-black via-yellow-600 to-black'>
-          <h1 className='font-bebasneue text-white text-center pb-10  pt-12 text-[55px] space-x-6'>Timeline</h1>
-          <div className="flex flex-col gap-y-8 pb-20">
+        <div className='flex flex-col text-white pr-32 pl-32 text-center  bg-gradient-to-b from-[#fff837] to-black'>
+          <h1 className='font-bebasneue text-white text-center pt-10 text-[55px] space-x-6'>Timeline</h1>
+          <div className="flex flex-col gap-y-8 pt-4 pb-24">
             <h2 className='font-rowdies text-[18px] pl-4'>Guns N’ Roses no solo cambió la música, también dejó una marca imborrable en la cultura popular. Desde sus primeros pasos en los bares de Los Ángeles hasta llenar estadios en cada rincón del mundo, esta banda se ganó su lugar como una de las más influyentes de la historia. Sus canciones, cargadas de rebeldía y pasión, traspasaron fronteras, llegando a lo más profundo de millones de corazones.</h2>
             <h2 className='font-rowdies text-[18px] pl-4'>Pero GN’R no se quedó solo en la música: su estilo, su actitud desafiante y su manera de vivir el rock los convirtieron en íconos de toda una generación. Sus shows en vivo, repletos de energía arrolladora y momentos inolvidables, quedaron grabados para siempre en la memoria de quienes tuvieron la suerte de estar ahí.</h2>
             <h2 className='font-rowdies text-[18px] pl-4'>Con un legado que sigue tan vigente como el primer día, Guns N’ Roses definió una era y marcó el camino del rock para siempre. En esta línea de tiempo, te invitamos a revivir los momentos que transformaron a GN'R en leyendas vivas. Explorá con nosotros cómo esta banda trascendió la música para convertirse en eternos protagonistas del rock. ¡Acompañanos y sentí la magia de GN'R!</h2>
