@@ -1,26 +1,26 @@
 {
-  "compilerOptions": {
-    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
-    "target": "ES2020",
+  "compilerOptions": {  // El comportamiento de TS durante el proceso de compilacion
+    "esModuleInterop": true,
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo", // Guardamos informacion previa sobre las compilaciones para que al compilar nuevamente TS lo haga mas rapido (el valor es la ruta del archivo) 
+    "target": "ES2020",  // La version de JS que se genera al compilar el codigo escrito en TS
     "useDefineForClassFields": true,
-    "lib": ["ES2020", "DOM", "DOM.Iterable"],
-    "module": "ESNext",
-    "skipLibCheck": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],  // Librerias que vamos a usar con TS
+    "module": "ESNext", // El sistema de modulos utilizado (ESNext usa la sintaxis import/export)
+    "skipLibCheck": true,  // Ignoramos errores en las dependencias de node_modules
 
-    /* Bundler mode */
+    /* Bundler mode (El blunde ayuda a TS a trabajar mejor con los empaquetadores como Vite)*/
     "moduleResolution": "Bundler",
-    "allowImportingTsExtensions": true,
+    "allowImportingTsExtensions": true,  // Permite importar archivos TS con su extension (ej: './models/User.ts')
     "isolatedModules": true,
-    "moduleDetection": "force",
-    "noEmit": true,
-    "jsx": "react-jsx",
+    "moduleDetection": "force",  // Se tratan todos los archivos como modulos aunque no tengan import o export
+    "noEmit": true,  // Le decimos a TS que no debe generar archivos .ts
+    "jsx": "react-jsx",  // DEfine como manejar los archivos jsx (react-jsx es la configuracion recomendada, la cual nos permite utilizar jsx sin tener que importar React)
 
-    /* Linting */
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    /* Linting (Ayuda a mejorar el codigo, eliminando las malas practicas) */
+    "strict": true, // Habilitamos las reglas estrictas, que nos obligan a escribir un codigo mas seguro
+    "noUnusedLocals": true,  // Tira error si hay variables que no se utilizan
+    "noUnusedParameters": true,  // Tira error si hay parametros no utilizados en funciones
+    "noUncheckedSideEffectImports": true  // Evitamos los "efectos secundarios" (que un archivo ejecute codigo solo por ser importado)
   },
-  "include": ["src"]
+  "include": ["src"] // Le decimos a TS que solo compile los archivos de la carpeta source
 }

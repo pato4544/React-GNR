@@ -1,24 +1,24 @@
 {
   "compilerOptions": {
-    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
-    "target": "ES2022",
-    "lib": ["ES2023"],
-    "module": "ESNext",
-    "skipLibCheck": true,
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",  // Guardamos info previa de compilaciones para compilar mas rapido en el futuro
+    "target": "ES2022",  // La version de JS que queremos que se genere al compilar el codigo TS
+    "lib": ["ES2023"],  // Las librerias que va a utilizar TS
+    "module": "ESNext",  // El sistema de modulos a utilizar (sintaxis import/export)
+    "skipLibCheck": true,  // Ignora los errores de las dependencias en node_modules
 
     /* Bundler mode */
     "moduleResolution": "Bundler",
-    "allowImportingTsExtensions": true,
+    "allowImportingTsExtensions": true,  // Podemos importar con extensiones
     "isolatedModules": true,
-    "moduleDetection": "force",
+    "moduleDetection": "force",  // Todos los archivos son forzados a ser modulos
     "noEmit": true,
 
     /* Linting */
     "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
+    "noUnusedLocals": true,  // Tira error al no utilizar variables declaradas
+    "noUnusedParameters": true,  // Tira error al no utilizar parametros declarados en funciones
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    "noUncheckedSideEffectImports": true  // Evita los "efectos secundarios"
   },
-  "include": ["vite.config.ts"]
+  "include": ["vite.config.ts"]  // Le pedimos que compile solo el archivo vite.config.ts
 }

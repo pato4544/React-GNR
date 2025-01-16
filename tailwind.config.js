@@ -9,18 +9,18 @@ export default {
   ],
   theme: {
     extend: {
-      translate: {
+      translate: {  // Tamaños
         '62' : '248px',
         '54' : '220px',
         '26' : '106px',
       },
-      backgroundImage: {
+      backgroundImage: {  // Degrades
         'guns-red': 'linear-gradient(to bottom, rgba(0,0,0,1) 5%, rgba(173,43,58,1) 50%, rgba(0,0,0,1) 100%)'
       },
       screens: {
         media: ['']
       },
-      fontFamily: {
+      fontFamily: {  // Fuentes
         roboto: ['Roboto', 'sans-serif'],
         montserrat: ['Montserrat', 'sans-serif'],
         poppins: ['Poppins', 'sans-serif'],

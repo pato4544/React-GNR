@@ -1,7 +1,8 @@
+// Este archivo se encarga de la configuracion de TypeScript
 {
   "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
+  "references": [ // Aca dividimos la configuracion principal en dos especificas
+    { "path": "./tsconfig.app.json" }, // Configuracion de TS para el front
+    { "path": "./tsconfig.node.json" }  // Configuracion de TS para el back
   ]
 }
