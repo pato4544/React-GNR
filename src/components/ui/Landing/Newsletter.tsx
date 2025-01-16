@@ -48,8 +48,7 @@ useEffect(() => {
           subject: "Email enviado",  // Asunto del correo
           html:  // Lo que va en el cuerpo del email
           ` 
-          
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <style>
@@ -71,6 +70,9 @@ useEffect(() => {
             button {
                 width: 50% !important;
             }
+            a {
+                font-size: 22px !important;
+            }   
         }
 
     </style>
@@ -90,7 +92,7 @@ useEffect(() => {
             <td class="pb" style="background-color: #fde047; text-align: center; padding-bottom: 40px">
                 <h2 style="font-family: Arial, Helvetica, sans-serif; color: black; font-size: 20px; padding-left: 5%; padding-right: 5%; font-weight: bolder;">¡GRACIAS POR TU SUSCRIPCIÓN!</h2>
                 <p style="font-family: Arial, Helvetica, sans-serif; color: black; font-size: 14px; padding-left: 10%; padding-right: 10%; padding-top: 10px;">Pronto vas a recibir las últimas novedades y ofertas en tu bandeja.</p>
-                <button style="margin-top: 20px; font-weight: bolder; width: 55%; border: none;  background-color: black; color: white; cursor: pointer;"><p>IR A LA PAGINA</p></button>
+                <button style="margin-top: 20px; padding: 5px; font-weight: bolder; width: 55%; border: none;  background-color: black; color: hite; cursor: pointer;"><a href="https://react-pagina.vercel.app" style="text-decoration: none; color: white;">IR A LA PAGINA</a></button>
             </td>
         </tr>
     </table>
