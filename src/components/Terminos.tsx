@@ -22,9 +22,9 @@ const Terminos = () => {
           <div>
             <h2 className='text-white font-bold text-[25px] border-b'>3. Política de Privacidad</h2>
             <h3 className='text-white font-semibold pt-4 text-[18px]'>3.1 Formulario de Contacto</h3>
-            <p className='text-white pt-2 text-[17px]'>Los formularios de contacto son de carácter exclusivamente <b>decorativo</b>. Aunque incluyan asuntos como "Tours", "Contrataciones" o "Tienda", no se envía ninguna información desde estos formularios ni se almacenan tus datos personales.</p>
+            <p className='text-white pt-2 text-[17px]'>Los datos ingresados se almacenan en una base de datos, pero estos no se utilizan para ningún propósito adicional ni se procesan de ninguna manera. La información recopilada permanece completamente inactiva.</p>
             <h3 className='text-white font-semibold pt-4 text-[18px]'>3.2 Newsletter</h3>
-            <p className='text-white pt-2 text-[17px]'>La suscripción al newsletter también es decorativa y no genera envíos de información ni recopila datos personales. Cualquier dato que ingreses no será procesado ni almacenado.</p>
+            <p className='text-white pt-2 text-[17px]'>La suscripción al newsletter solicita tu correo electrónico y al "suscribirse" envía automaticamente un email decorativo a este mismo. No se almacenan datos ni se enviarán más correos, ya que la suscripción es puramente decorativa y no existe realmente.</p>
           </div>
 
           <div>
